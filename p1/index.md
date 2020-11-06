@@ -36,7 +36,7 @@ if (!$user) {
 }
 ```
 
-#### #Do just this:
+##### Do just this:
 
 ```sh
 $user = User::firstOrCreate(['email' => $email]);
@@ -126,12 +126,12 @@ $query->when(request('filter_by') == 'date', function ($q) {
 
 ### BelongsTo Default Models
 
-##### insteads of
+##### Insteads of
 ```sh
 {{ $post->author->name ?? '' }}
 
 ```
-##### into
+##### Into
 ```sh
 public function author()
 {
@@ -209,7 +209,7 @@ $q->orWhere('b', 2);
 $q->orWhere('c', 3);
 ```
 
-##### should do
+##### Should do
 
 ```sh
 $q->where('a', 1);
